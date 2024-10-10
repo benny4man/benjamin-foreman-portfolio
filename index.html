@@ -1,82 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
-    <link rel="icon" href="assets/image/favicon.ico" type="image/x-icon" />
-  </head>
 
-  <body>
-    <header>
-      <!-- heading for my name and sub heading for content of page -->
-      <div>
-        <h1 class="main-heading">Benjamin Foreman - My Portfolio</h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="icon" href="assets/image/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <header>
+    <!-- heading for my name and sub heading for content of page -->
+    <div>
+      <h1 class="main-heading">Benjamin Foreman</h1>
+      <h1 class="sub-heading">My Portfolio</h1>
+    </div>
+
+    <!-- nav menu including resume page and fun facts page -->
+    <nav class="header-nav">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="./html/my_resume.html">Resume</a></li>
+        <li><a href="./html/my_fun_facts.html">Fun Facts</a></li>
+      </ul>
+    </nav>
+
+
+  </header>
+
+  <main>
+    <!-- introductory paragraph -->
+    <section class="hero">
+      <div class="intro-paragraph">
+        <h4 class="section-divider">A little bit about me...</h4>
+        <p>
+          Hi, my name is Benjamin Foreman. I am a Computer Science student who
+          is passionate about web and software development. I grew up in the
+          Metro-Detroit area and have always had a love for computers. For fun
+          I would build PCs and tinker with programs. When I started
+          my college career I decided to translate this hobby into my love for
+          coding.
+        </p>
+        <button class="hire-me-btn">Hire me</button>
       </div>
-
-      <!-- nav menu including resume page and fun facts page -->
-      <nav class="header-nav">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="./html/my_resume.html">Resume</a></li>
-          <li><a href="./html/my_fun_facts.html">Fun Facts!</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <main>
       <section class="self-image">
-        <div>
-          <!-- image of myself and a quote underneath -->
-          <figure>
-            <img
-              src="./assets/image/self.jpg"
-              alt="Image of myself"
-              height="408px"
-              width="307.2px"
-            />
-            <figcaption style="text-indent: 20px">
-              "The only source of knowlege is experience" - Albert Einstein
-            </figcaption>
-          </figure>
-        </div>
+        <!-- image of myself and a quote underneath -->
+        <figure>
+          <img src="./assets/image/self.jpg" alt="Image of myself" height="408px" width="307.2px" />
+          <figcaption style="text-indent: 20px">
+            "The only source of knowlege is experience" - Albert Einstein
+          </figcaption>
+        </figure>
       </section>
-      <!-- introductory paragraph -->
-      <section id="intro-paragraph">
-        <div>
-          <p>
-            Hi, my name is Benjamin Foreman. I am a Comupter Science student who
-            is passionate about web and software development. I grew up in the
-            metro-Detroit area and have always had a love for computers. For fun
-            I would like to build PCs and tinker with programs. When I started
-            my college career I decided to translate this hobby into my love for
-            coding.
-          </p>
-          <p>
-            Currently I am an IT online chat consultant for the University of
-            Michigan. Previously I worked as Merchandising Associate for Kohl's
-            and as a Tutor for Oakland University. From my classes I have found
-            that I like software and web developement so in the future I would
-            like to be a Software Engineer or a Frontend Web Developer. To learn
-            more about me check out my
-            <a href="./html/my_resume.html">resume</a> or my
-            <a href="./html/my_fun_facts.html">fun facts page</a>!
-          </p>
-        </div>
-      </section>
+    </section>
+    <h4 class="section-divider">My experience...</h4>
+    <section class="work-paragraph">
       <!-- progress bar for completion of degree requirements, all credits have been completed a while ago so showing that would not be useful -->
       <section class="progress-bar">
-        <div>
-          <label for="progress">Completion of degree requirements: </label>
-          <progress id="progress" value="98" max="100">98/100</progress>
-        </div>
+        <label for="progress">Completion of degree requirements: </label>
+        <progress id="progress" value="98" max="100">98/100</progress>
       </section>
-    </main>
+      <p>
+        Currently I am an IT online chat consultant for the University of
+        Michigan. Previously I worked as a Merchandising Associate for Kohl's
+        and as a Tutor for Oakland University. From my classes I have found
+        that I like software and web developement so in the future I would
+        like to be a Software Engineer or a Frontend Web Developer. To learn
+        more about me check out my
+        <a href="./html/my_resume.html">resume</a> or my
+        <a href="./html/my_fun_facts.html">fun facts page</a>!
+      </p>
 
-    <footer>
-      <hr />
-      <p>Email: benny4man@gmail.com</p>
-      <p>© 2024 Benjamin Foreman All Rights Reserved</p>
-    </footer>
-  </body>
+    </section>
+
+  </main>
+
+  <footer>
+    <hr />
+    <p>benny4man@gmail.com</p>
+    <p>© 2024 Benjamin Foreman All Rights Reserved</p>
+  </footer>
+</body>
+
 </html>
