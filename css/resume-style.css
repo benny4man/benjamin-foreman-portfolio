@@ -1,0 +1,267 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif, Tahoma;
+  --bg-primary: #dce0e6;
+  --bg-secondary: #2e3b4e;
+  --font-color-primary: #f0f4fa;
+  --font-color-secondary: #5db3df;
+  --backup-color: #306b34;
+}
+
+body {
+  height: 100vh;
+  background: var(--bg-primary);
+}
+
+/* ------------------------------ header ------------------------------ */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--bg-secondary);
+  height: 100px;
+  padding: 0 30px;
+}
+
+header > div {
+  display: flex;
+  flex-direction: column;
+}
+
+header .main-heading {
+  color: var(--bg-primary);
+  font-size: 28px;
+}
+
+header .sub-heading {
+  color: var(--bg-primary);
+  font-size: 24px;
+}
+
+header nav ul {
+  display: flex;
+}
+
+header nav ul li {
+  list-style: none;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: var(--font-color-secondary);
+  margin-right: 50px;
+  font-size: 20px;
+  transition: color 0.3 ease;
+}
+
+header nav ul li a:hover {
+  color: var(--font-color-primary);
+}
+
+header nav ul li:last-child {
+  margin-right: 0px;
+}
+
+/* ------------------------------ hire button ------------------------------ */
+
+.hire-me-btn {
+  background: var(--backup-color);
+  color: var(--font-color-primary);
+  width: 150px;
+  padding: 6px 16px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.3 ease;
+}
+
+.hire-me-btn:hover {
+  background: var(--font-color-secondary);
+  color: var(--bg-secondary);
+}
+
+/* ------------------------------ main globals --------------------------- */
+main {
+  padding: 0 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ------------------------------ contact ------------------------------ */
+.section-divider {
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--bg-secondary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 30vw;
+  margin-top: 80px;
+}
+
+main > h2 {
+  margin-top: 100px;
+}
+
+main > hr {
+  width: 60vw;
+  margin-top: 20px;
+}
+
+main .contact h2 ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background: rgba(93, 116, 151, 0.274);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+main .contact h2 ul li {
+  color: var(--bg-secondary);
+  font-size: 18px;
+  font-weight: 500;
+}
+
+main .contact h2 ul li:first-child {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+main .contact .objective {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: var(--bg-secondary);
+}
+
+main .contact h3 {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+main .contact p {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* ------------------------------ experience ------------------------------ */
+main .experience {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 160px;
+  color: var(--bg-secondary);
+  font-size: 18px;
+  font-weight: 500;
+}
+
+main .experience h3 {
+  color: var(--bg-secondary);
+  font-weight: 700;
+  font-size: 20px;
+  background: rgba(156, 156, 156, 0.705);
+  padding: 5px 20px;
+  border-radius: 5px;
+}
+
+main .experience ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+main .experience ul li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin-top: 30px;
+  width: 70vw;
+}
+
+main .experience ul li p {
+  display: flex;
+}
+
+/* ------------------------------ experience/hobby section ---------------- */
+
+main .third-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 200px;
+  margin-top: 160px;
+}
+
+main .third-section .education-experience {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: var(--bg-secondary);
+  background: rgba(93, 116, 151, 0.274);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+main .third-section .education-experience table {
+  margin-top: 10px;
+  background: rgba(93, 116, 151, 0.274);
+}
+
+main .third-section .education-experience table,
+th,
+td {
+  border: 1px solid;
+  border-collapse: collapse;
+  padding: 10px;
+}
+
+main .third-section .hobbies{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: var(--bg-secondary);
+}
+
+main .hire-me-btn{
+    margin-top: 200px;
+    width: 30vw;
+    height: 60px;
+    font-size: 26px;
+}
+
+/* ------------------------------ footer ------------------------------ */
+footer {
+  margin-top: 250px;
+}
+
+footer p {
+  padding: 0px 20px;
+  font-size: 14px;
+}

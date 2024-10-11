@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif, Tahoma;
+  --bg-primary: #dce0e6;
+  --bg-secondary: #2e3b4e;
+  --font-color-primary: #f0f4fa;
+  --font-color-secondary: #5db3df;
+  --backup-color: #306b34;
+}
+
+body {
+  height: 100vh;
+  background: var(--bg-primary);
+}
+
+/* ------------------------------ header ------------------------------ */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--bg-secondary);
+  height: 100px;
+  padding: 0 30px;
+}
+
+header > div {
+  display: flex;
+  flex-direction: column;
+}
+
+header .main-heading {
+  color: var(--bg-primary);
+  font-size: 28px;
+}
+
+header .sub-heading {
+  color: var(--bg-primary);
+  font-size: 24px;
+}
+
+header nav ul {
+  display: flex;
+}
+
+header nav ul li {
+  list-style: none;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: var(--font-color-secondary);
+  margin-right: 50px;
+  font-size: 20px;
+  transition: color 0.3 ease;
+}
+
+header nav ul li a:hover {
+  color: var(--font-color-primary);
+}
+
+header nav ul li:last-child {
+  margin-right: 0px;
+}
+
+/* ------------------------------ main globals --------------------------- */
+main {
+  padding: 0 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+main > h2 {
+  margin-top: 100px;
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--bg-secondary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main > hr {
+  width: 60vw;
+  margin-top: 20px;
+}
+
+/* ------------------------------ fav book ------------------------------- */
+main .fav-section {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--bg-secondary);
+}
+
+main .fav-section h2{
+    font-size: 30px;
+}
+
+main .fav-section h3{
+    margin-top: 10px;
+}
+
+main .fav-section figure{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
